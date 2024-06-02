@@ -20,7 +20,7 @@ app.set('port', PORT);
 app.use(helmet())
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use('/', router)
+app.use('/api-dolar/', router)
 
 // CORS
 app.use('*',function(req, res, next) {
